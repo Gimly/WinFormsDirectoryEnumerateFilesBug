@@ -54,5 +54,8 @@ namespace DefaultDesktopMessageBoxIssue
                 SelectedFolder = demoFolderBrowserDlg.SelectedPath;
             }
         }
+
+        private void enumerateConcat_Click(object sender, EventArgs e) =>
+            Files = Directory.EnumerateFiles(SelectedFolder).Concat(Directory.EnumerateFiles(SelectedFolder)).ToList();
     }
 }

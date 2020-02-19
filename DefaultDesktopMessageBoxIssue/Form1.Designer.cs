@@ -38,14 +38,15 @@
             this.browseFileBtn = new System.Windows.Forms.Button();
             this.selectedFolderTbx = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.enumerateConcat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // desktopMsgBoxBtn
             // 
-            this.desktopMsgBoxBtn.Location = new System.Drawing.Point(104, 110);
-            this.desktopMsgBoxBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.desktopMsgBoxBtn.Location = new System.Drawing.Point(227, 213);
+            this.desktopMsgBoxBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.desktopMsgBoxBtn.Name = "desktopMsgBoxBtn";
-            this.desktopMsgBoxBtn.Size = new System.Drawing.Size(96, 41);
+            this.desktopMsgBoxBtn.Size = new System.Drawing.Size(186, 79);
             this.desktopMsgBoxBtn.TabIndex = 0;
             this.desktopMsgBoxBtn.Text = "MessageBox Desktop Only";
             this.desktopMsgBoxBtn.UseVisualStyleBackColor = true;
@@ -53,10 +54,10 @@
             // 
             // standardMsgBoxBtn
             // 
-            this.standardMsgBoxBtn.Location = new System.Drawing.Point(220, 112);
-            this.standardMsgBoxBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.standardMsgBoxBtn.Location = new System.Drawing.Point(420, 215);
+            this.standardMsgBoxBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.standardMsgBoxBtn.Name = "standardMsgBoxBtn";
-            this.standardMsgBoxBtn.Size = new System.Drawing.Size(93, 39);
+            this.standardMsgBoxBtn.Size = new System.Drawing.Size(192, 75);
             this.standardMsgBoxBtn.TabIndex = 1;
             this.standardMsgBoxBtn.Text = "MessageBox standard";
             this.standardMsgBoxBtn.UseVisualStyleBackColor = true;
@@ -64,10 +65,10 @@
             // 
             // enumerateFilesBtn
             // 
-            this.enumerateFilesBtn.Location = new System.Drawing.Point(104, 70);
-            this.enumerateFilesBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.enumerateFilesBtn.Location = new System.Drawing.Point(27, 135);
+            this.enumerateFilesBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.enumerateFilesBtn.Name = "enumerateFilesBtn";
-            this.enumerateFilesBtn.Size = new System.Drawing.Size(96, 36);
+            this.enumerateFilesBtn.Size = new System.Drawing.Size(192, 69);
             this.enumerateFilesBtn.TabIndex = 2;
             this.enumerateFilesBtn.Text = "Enumerate files";
             this.enumerateFilesBtn.UseVisualStyleBackColor = true;
@@ -76,28 +77,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 40);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(22, 77);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.Size = new System.Drawing.Size(202, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "MessageBox result:";
             // 
             // msgBoxResultTbx
             // 
-            this.msgBoxResultTbx.Location = new System.Drawing.Point(115, 37);
-            this.msgBoxResultTbx.Margin = new System.Windows.Forms.Padding(2);
+            this.msgBoxResultTbx.Location = new System.Drawing.Point(230, 71);
+            this.msgBoxResultTbx.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.msgBoxResultTbx.Name = "msgBoxResultTbx";
             this.msgBoxResultTbx.ReadOnly = true;
-            this.msgBoxResultTbx.Size = new System.Drawing.Size(149, 20);
+            this.msgBoxResultTbx.Size = new System.Drawing.Size(322, 31);
             this.msgBoxResultTbx.TabIndex = 4;
             // 
             // toListBtn
             // 
-            this.toListBtn.Location = new System.Drawing.Point(220, 70);
-            this.toListBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.toListBtn.Location = new System.Drawing.Point(227, 135);
+            this.toListBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.toListBtn.Name = "toListBtn";
-            this.toListBtn.Size = new System.Drawing.Size(93, 36);
+            this.toListBtn.Size = new System.Drawing.Size(186, 69);
             this.toListBtn.TabIndex = 5;
             this.toListBtn.Text = "To List";
             this.toListBtn.UseVisualStyleBackColor = true;
@@ -105,10 +106,10 @@
             // 
             // browseFileBtn
             // 
-            this.browseFileBtn.Location = new System.Drawing.Point(269, 12);
-            this.browseFileBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.browseFileBtn.Location = new System.Drawing.Point(562, 22);
+            this.browseFileBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.browseFileBtn.Name = "browseFileBtn";
-            this.browseFileBtn.Size = new System.Drawing.Size(25, 20);
+            this.browseFileBtn.Size = new System.Drawing.Size(50, 38);
             this.browseFileBtn.TabIndex = 6;
             this.browseFileBtn.Text = "...";
             this.browseFileBtn.UseVisualStyleBackColor = true;
@@ -116,25 +117,38 @@
             // 
             // selectedFolderTbx
             // 
-            this.selectedFolderTbx.Location = new System.Drawing.Point(115, 12);
+            this.selectedFolderTbx.Location = new System.Drawing.Point(230, 23);
+            this.selectedFolderTbx.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.selectedFolderTbx.Name = "selectedFolderTbx";
-            this.selectedFolderTbx.Size = new System.Drawing.Size(149, 20);
+            this.selectedFolderTbx.Size = new System.Drawing.Size(322, 31);
             this.selectedFolderTbx.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 15);
+            this.label2.Location = new System.Drawing.Point(22, 29);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.Size = new System.Drawing.Size(162, 25);
             this.label2.TabIndex = 8;
             this.label2.Text = "Selected folder:";
             // 
+            // enumerateConcat
+            // 
+            this.enumerateConcat.Location = new System.Drawing.Point(420, 135);
+            this.enumerateConcat.Name = "enumerateConcat";
+            this.enumerateConcat.Size = new System.Drawing.Size(192, 69);
+            this.enumerateConcat.TabIndex = 9;
+            this.enumerateConcat.Text = "Enumerate concat";
+            this.enumerateConcat.UseVisualStyleBackColor = true;
+            this.enumerateConcat.Click += new System.EventHandler(this.enumerateConcat_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 167);
+            this.ClientSize = new System.Drawing.Size(638, 321);
+            this.Controls.Add(this.enumerateConcat);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.selectedFolderTbx);
             this.Controls.Add(this.browseFileBtn);
@@ -144,7 +158,7 @@
             this.Controls.Add(this.enumerateFilesBtn);
             this.Controls.Add(this.standardMsgBoxBtn);
             this.Controls.Add(this.desktopMsgBoxBtn);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -164,6 +178,7 @@
         private System.Windows.Forms.Button browseFileBtn;
         private System.Windows.Forms.TextBox selectedFolderTbx;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button enumerateConcat;
     }
 }
 
